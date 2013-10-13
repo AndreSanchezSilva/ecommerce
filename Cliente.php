@@ -1,7 +1,8 @@
 <?php
 
 	Class Cliente {
-
+		
+		private $idCliente;
 		private $nome;
 		private $email;
 		private $senha;
@@ -15,6 +16,9 @@
 		private $cidade;
 		private $telefone;
 		private $celular;
+		
+		public function setIdCliente( $idCliente ){ $this->idCliente = $idCliente; }
+		public function getIdCliente(){ return $this->idCliente; }
 
 		public function setNome( $nome ){ $this->nome = $nome; }
 		public function getNome(){ return $this->nome; }
