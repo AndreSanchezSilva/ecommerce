@@ -1,6 +1,6 @@
 Reunião 14/10/2013
 
-  -Definir do banco de dados
+  -Definir banco de dados
   -Definir a distribuição das tarefas
     - Modelagem, DAO e Banco de dados
     - Controllers, Rotas e Arquitetura da Informação
