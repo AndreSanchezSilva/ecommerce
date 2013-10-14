@@ -1,0 +1,13 @@
+Reunião 14/10/2010
+
+  -Definir do banco de dados
+  -Definir a distribuição das tarefas
+    - Modelagem, DAO e Banco de dados
+    - Controllers, Rotas e Arquitetura da Informação
+    - Views e Usabilidade
+  - Definir Layout e Wireframes
+  - Definir Frameworks, Modulos e Padrões
+    - Bootstrap
+    - MVC
+    - PDO
+    - Jquery
