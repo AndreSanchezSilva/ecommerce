@@ -3,8 +3,18 @@ Links Úteis
 Heroku Ninja Tool
 https://toolbelt.heroku.com/
 
-Tutorial Git
-http://rogerdudler.github.io/git-guide/index.pt_BR.html
-
 Bootstrap
 http://getbootstrap.com/
+
+GIT:
+
+Pt_BR:
+http://rogerdudler.github.io/git-guide/index.pt_BR.html
+http://tableless.com.br/introducao-das-premissas-dos-controles-de-versao/#.UlxDKoaJBal
+
+ENG:
+http://marklodato.github.io/visual-git-guide/index-en.html#basic-usage
+
+
+Outros: (Palestras)
+http://code-squad.com/conteudo/screencasts
