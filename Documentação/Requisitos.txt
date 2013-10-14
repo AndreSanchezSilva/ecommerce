@@ -1,0 +1,60 @@
+Projeto Loja Virtual
+
+Grupo: Máximo de 4 Pessoas.
+
+Objetivo: Criar uma loja virtual e um painel administrativo para realizar os cadastros dos grupos, subgrupos e produtos da página. Na loja virtual o usuário poderá buscar produtos e filtrar por Grupo e SubGrupo.
+
+* Utilizar o Bootstrap (http://getbootstrap.com/) para desenvolver na interface do Painel e WebSite.
+
+* Utilizar a Orientação Objetos no Painel Administrativo e no WebSite
+
+O projeto será desenvolvido em duas etapas:
+
+1) Painel administrativo
+Objetivo: Desenvolver um painel administrativo com os seguintes cadastros/interface:
+
+1.1) Grupo de Produto
+1.2) SubGrupo de Produto
+1.3) Produto
+1.4) Usuário de Acesso ao Sistema
+1.5) Login
+
+2) WebSite
+Objetivo: Criar uma página que o usuário possa realizar uma busca de produtos, ou filtrar por Grupo e depois por SubGrupo.
+
+2.1) Criar um topo que estará em todas as paginas e deve conter o logo da empresa, uma busca de produtos por nome e os grupos de produtos.
+2.2) Criar um rodape com as informações da empresa e formas de pagamento.
+2.3) Pagina Inicial: Mostrar 10 produtos cadastrados de forma aleatória;
+2.4) Lista de Produtos por Grupo e  SubGrupo
+2.5) Carrinho de Compras
+2.6) Finalizar Compra
+2.7) Cadastro de Cliente
+2.8) Login de Cliente
+2.9) Finalizar compra deve gerar um boleto no valor final da compra. Utilizar a página http://boletophp.com.br/ para baixar o layout do boleto.
+
+Exemplos de Grupos/SubGrupos/Produtos:
+Grupo: Informática
+SubGrupo: Notebook
+Produto: Notebook Acer 1.4 Ghz
+
+Grupo: Informática
+SubGrupo: Netbook
+Produto: Netbook HP Aton
+
+Grupo: Informática
+SubGrupo: Acessórios
+Produto: Mouse HP sem Fio
+
+Utilize como ideia lojas virtuais disponíveis no mercado como exemplo: 
+www.submarino.com.br
+www.americanas.com.br
+www.pontofrio.com.br
+
+Todos da equipe devem participar do desenvolvimento
+Haverá uma banca de apresentação dos trabalhos de 30 minutos
+Será avaliado os seguintes itens no desenvolvimento do projeto:
+
+    Estrutura/Organização do código fonte
+    Layout
+    Usabilidade
+    Apresentação da Equipe
