@@ -11,3 +11,6 @@ Reunião 14/10/2013
     - MVC
     - PDO
     - Jquery
+  - Definir Ambiente de Desenvolvimento
+    -Heroku
+    -GitHub
