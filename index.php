@@ -8,7 +8,7 @@
 
 
 
-	Echo 'Teste';
+	phpinfo();
 
 ?>
 </body>
