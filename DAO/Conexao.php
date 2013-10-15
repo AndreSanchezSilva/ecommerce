@@ -4,7 +4,7 @@ class Conexao extends PDO {
     private static $conexao;
     
 
-    public function Conexao() {
+    public function __construct() {
 
         $host = "ec2-23-21-133-106.compute-1.amazonaws.com";
         $porta = "5432";
