@@ -43,3 +43,5 @@ class Conexao extends PDO {
     }
 
 }
+
+?>
