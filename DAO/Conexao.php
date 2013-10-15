@@ -2,18 +2,26 @@
 class Conexao extends PDO {
  
     private static $conexao;
- 
-    public function Conexao($dsn, $username = "", $password = "") {
-        parent::__construct($dsn, $username, $password);
+    
+
+    public function Conexao() {
+
+        $host = "ec2-23-21-133-106.compute-1.amazonaws.com";
+        $porta = "5432";
+        $db = "dfjamjie4vlfeq";
+        $user = "kxyxzoxjfjjbzl";
+        $pass = "_I7fyDJgFOoKSRoaBbSsJpMFur";
+
+
+        parent::__construct("pgsql:host=$host; port=$porta; dbname=$db; user=$user; password=$pass;");
     }
- 
+
     public static function conecta() {
         if(!isset( self::$conexao )){
             try {
-                self::$conexao = new Conexao("pgsql:host=ec2-23-21-133-106.compute-1.amazonaws.com
-;dbname=dfjamjie4vlfeq", "kxyxzoxjfjjbzl", "_I7fyDJgFOoKSRoaBbSsJpMFur");
+                self::$conexao =  new Conexao();
             } catch ( Exception $e ) {
-                echo 'Erro ao conectar';
+                echo 'Erro ao conectar: ' . $e->getMessage();
                 exit ();
             }
         }
