@@ -10,6 +10,7 @@
 
 	phpinfo();
 
+	echo $_SERVER["SERVER_NAME"];
 ?>
 </body>
 </html>
