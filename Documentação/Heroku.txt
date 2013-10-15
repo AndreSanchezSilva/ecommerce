@@ -1,0 +1,12 @@
+Heroku:
+  http://xcommerce.herokuapp.com/
+  git@heroku.com:xcommecer.git
+
+Heroku Postgres:
+
+  Host= ec2-23-21-133-106.compute-1.amazonaws.com
+  Database=	dfjamjie4vlfeq
+  User= kxyxzoxjfjjbzl
+  Port= 5432
+  Password=	_I7fyDJgFOoKSRoaBbSsJpMFur
+  
