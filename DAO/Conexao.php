@@ -1,7 +1,7 @@
 <?php
 class Conexao extends PDO {
  
-    protected static $conexao;
+    protected $conexao;
     
 
     public function __construct() {
@@ -30,21 +30,21 @@ class Conexao extends PDO {
         }
     }
 
-    public static function conecta() {
-        if(!isset( self::$conexao )){
+    public function conecta() {
+        if(!isset( $this->conexao )){
             try {
-                self::$conexao =  new Conexao();
+                $this->conexao =  new Conexao();
             } catch ( Exception $e ) {
                 echo 'Erro ao conectar: ' . $e->getMessage();
                 exit ();
             }
         }
-        return self::$conexao;
+        return $this->conexao;
     }
 
     public function __destruct() {
 
-        self::$conexao = NULL;
+        $this->conexao = NULL;
 
     }
 
