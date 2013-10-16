@@ -1,67 +1,67 @@
 <?php
 
-    Class GrupoDAO extends Conexao {
+	Class GrupoDAO extends Conexao {
 
-        public function __construct() {
-            parent::conecta();
-        }
+		public function __construct() {
+			parent::conecta();
+		}
 
-        public function salvar(Grupo $grupo) {
+		public function salvar(Grupo $grupo) {
 
-            if ($grupo->getIdGrupo()) {             
-                $query = $this->conexao->prepare("UPDATE grupo SET nome= :nome  WHERE idGrupo = :idGrupo");
-                $parametros = array(":nome" => $grupo->getNome(), ":idGrupo" => $grupo->getIdGrupo());
-                $query->execute($parametros);           
-            } else {
-                $query = $this->conexao->prepare("INSERT INTO grupo (nome) VALUES (:nome)");
-                $parametros = array(":nome" => $grupo->getNome());
-                $query->execute($parametros);
-            }
+			if ($grupo->getIdGrupo()) {             
+				$query = $this->conexao->prepare("UPDATE grupo SET nome= :nome  WHERE idGrupo = :idGrupo");
+				$parametros = array(":nome" => $grupo->getNome(), ":idGrupo" => $grupo->getIdGrupo());
+				$query->execute($parametros);           
+			} else {
+				$query = $this->conexao->prepare("INSERT INTO grupo (nome) VALUES (:nome)");
+				$parametros = array(":nome" => $grupo->getNome());
+				$query->execute($parametros);
+			}
 
-        }
+		}
 
-        public function excluir( $idGrupo ) {
+		public function excluir( $idGrupo ) {
 
-            $query = $this->conexao->prepare("DELETE FROM grupo WHERE idGrupo = :idGrupo");
-            $parametros = array(":idGrupo" => $idGrupo);
-            $query->execute($parametros);           
+			$query = $this->conexao->prepare("DELETE FROM grupo WHERE idGrupo = :idGrupo");
+			$parametros = array(":idGrupo" => $idGrupo);
+			$query->execute($parametros);           
 
-        }
+		}
 
-        public function listar() {
+		public function listar() {
 
-            $query = $this->conexao->query("SELECT * FROM grupo ORDER BY nome");
-            $grupos = Array();
+			$query = $this->conexao->query("SELECT * FROM grupo ORDER BY nome");
+			$grupos = Array();
 
-            while ( $resultado = $query->fetch ( PDO::FETCH_OBJ ) ) {               
-                $grupo = new Grupo;
-                $grupo->setIdGrupo($resultado->idGrupo);
-                $grupo->setNome($resultado->nome);
+			while ( $resultado = $query->fetch ( PDO::FETCH_OBJ ) ) {               
+				$grupo = new Grupo;
+				$grupo->setIdGrupo($resultado->idGrupo);
+				$grupo->setNome($resultado->nome);
 
-                $grupos[] = $grupo;
-            }
-            
-            return $grupos;
+				$grupos[] = $grupo;
+			}
+			
+			return $grupos;
 
-        }
+		}
 
-        public function recuperar( $idGrupo ) {
+		public function recuperar( $idGrupo ) {
 
-            $query = $this->conexao->prepare("SELECT * FROM grupo WHERE idGrupo = :idGrupo ORDER BY nome");
-            $parametros = array(":idGrupo" => $idGrupo);
-            $query->execute($parametros);
+			$query = $this->conexao->prepare("SELECT * FROM grupo WHERE idGrupo = :idGrupo ORDER BY nome");
+			$parametros = array(":idGrupo" => $idGrupo);
+			$query->execute($parametros);
 
-            if ($resultado = $query->fetch(PDO::FETCH_OBJ)) {
+			if ($resultado = $query->fetch(PDO::FETCH_OBJ)) {
 
-                $grupo = new Grupo;
-                $grupo->setIdGrupo($resultado->idGrupo);
-                $grupo->setNome($resultado->nome);
+				$grupo = new Grupo;
+				$grupo->setIdGrupo($resultado->idGrupo);
+				$grupo->setNome($resultado->nome);
 
-                return $grupo;
-            }
+				return $grupo;
+			}
 
-        }
+		}
 
-    }
+	}
 
 ?>
