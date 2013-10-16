@@ -1,9 +1,11 @@
 <?php
 
 	include('DAO/Conexao.php');
+	include('DAO/GrupoDAO.php');
+	include('Model/Grupo.php');
 
-	$teste = Conexao::conecta();
-
-	print_r($teste);
+	$grupoDAO = new GrupoDAO;
+	
+	print_r($grupoDAO->listar());
 
 ?>

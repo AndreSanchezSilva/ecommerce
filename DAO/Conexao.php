@@ -1,7 +1,7 @@
 <?php
 class Conexao extends PDO {
  
-    private static $conexao;
+    protected static $conexao;
     
 
     public function __construct() {
@@ -40,6 +40,12 @@ class Conexao extends PDO {
             }
         }
         return self::$conexao;
+    }
+
+    public function __destruct() {
+
+        self::$conexao = NULL;
+
     }
 
 }
