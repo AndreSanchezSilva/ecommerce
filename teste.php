@@ -6,6 +6,12 @@
 
 	$grupoDAO = new GrupoDAO;
 	
-	print_r($grupoDAO->listar());
+	$grupo = new Grupo;
+
+	//$grupo->setIdGrupo(5);
+	$grupo->setNome('dddddb');
+
+	print_r($grupoDAO->salvar($grupo));
+
 
 ?>

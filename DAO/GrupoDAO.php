@@ -8,13 +8,23 @@
 
 		public function salvar(Grupo $grupo) {
 
+			if ($grupo->getIdGrupo()) {				
+				$query = $this->conexao->prepare("UPDATE grupo SET nome= :nome  WHERE idGrupo = :idGrupo");
+				$parametros = array(":nome" => $grupo->getNome(), ":idGrupo" => $grupo->getIdGrupo());
+	   			$query->execute($parametros);			
+			} else {
+				$query = $this->conexao->prepare("INSERT INTO grupo (nome) VALUES (:nome)");
+				$parametros = array(":nome" => $grupo->getNome());
+	   			$query->execute($parametros);
+			}
+
 		}
 
 		public function excluir( $idGrupo ) {
 
 	    	$query = $this->conexao->prepare("DELETE FROM grupo WHERE idGrupo = :idGrupo");
-	    	$query->bindParam(":idGrupo", $idGrupo , PDO::PARAM_INT);
-    		$query->execute();			
+	    	$parametros = array(":idGrupo" => $idGrupo);
+    		$query->execute($parametros);			
 
 		}
 
@@ -38,8 +48,8 @@
 		public function recuperar( $idGrupo ) {
 
  		    $query = $this->conexao->prepare("SELECT * FROM grupo WHERE idGrupo = :idGrupo ORDER BY nome");
-		    $query->bindParam(":idGrupo", $idGrupo , PDO::PARAM_INT);
-		    $query->execute();
+		    $parametros = array(":idGrupo" => $idGrupo);
+		    $query->execute($parametros);
 
 		    if ($resultado = $query->fetch(PDO::FETCH_OBJ)) {
 
