@@ -12,19 +12,15 @@
 
 		public function excluir( $idGrupo ) {
 
-			$pdo = parent::$conexao;
-	    	$query = $pdo->prepare("DELETE FROM grupo WHERE idGrupo = :idGrupo");
+	    	$query = $this->conexao->prepare("DELETE FROM grupo WHERE idGrupo = :idGrupo");
 	    	$query->bindParam(":idGrupo", $idGrupo , PDO::PARAM_INT);
     		$query->execute();			
-    		
+
 		}
 
 		public function listar() {
 
-			$pdo = parent::$conexao;
- 		    $query = $pdo->prepare("SELECT * FROM grupo ORDER BY nome");
-		    $query->execute();
-
+			$query = $this->conexao->query("SELECT * FROM grupo ORDER BY nome");
 		    $grupos = Array();
 
 		    while ( $resultado = $query->fetch ( PDO::FETCH_OBJ ) ) {		    	
@@ -41,8 +37,7 @@
 
 		public function recuperar( $idGrupo ) {
 
-			$pdo = parent::$conexao;
- 		    $query = $pdo->prepare("SELECT * FROM grupo WHERE idGrupo = :idGrupo ORDER BY nome");
+ 		    $query = $this->conexao->prepare("SELECT * FROM grupo WHERE idGrupo = :idGrupo ORDER BY nome");
 		    $query->bindParam(":idGrupo", $idGrupo , PDO::PARAM_INT);
 		    $query->execute();
 
