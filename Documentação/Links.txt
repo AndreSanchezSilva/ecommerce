@@ -24,3 +24,9 @@ E-commerce com boa Usabilidade:
 http://www.sephora.com.br/
 http://www.zappos.com/
 https://www.baby.com.br/
+
+
+Exemplos de Painel Administrativo:
+
+http://pixelcave.com/demo/uadmin/index.php
+http://nightskyadmin.com/demo/template/dashboard.html
