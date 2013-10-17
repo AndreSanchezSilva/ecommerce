@@ -8,10 +8,10 @@
 	
 	$grupo = new Grupo;
 
-	//$grupo->setIdGrupo(5);
+	$grupo->setIdGrupo(5);
 	$grupo->setNome('dddddb');
 
-	print_r($grupoDAO->salvar($grupo));
+	print_r($grupoDAO->listar());
 
 
 ?>

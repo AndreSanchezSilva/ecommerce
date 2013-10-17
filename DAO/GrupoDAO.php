@@ -9,7 +9,7 @@
 		public function salvar(Grupo $grupo) {
 
 			if ($grupo->getIdGrupo()) {             
-				$query = $this->conexao->prepare("UPDATE grupo SET nome= :nome  WHERE idGrupo = :idGrupo");
+				$query = $this->conexao->prepare("UPDATE grupo SET nome = :nome  WHERE idGrupo = :idGrupo");
 				$parametros = array(":nome" => $grupo->getNome(), ":idGrupo" => $grupo->getIdGrupo());
 				$query->execute($parametros);           
 			} else {
@@ -47,7 +47,7 @@
 
 		public function recuperar( $idGrupo ) {
 
-			$query = $this->conexao->prepare("SELECT * FROM grupo WHERE idGrupo = :idGrupo ORDER BY nome");
+			$query = $this->conexao->prepare("SELECT * FROM grupo WHERE idGrupo = :idGrupo");
 			$parametros = array(":idGrupo" => $idGrupo);
 			$query->execute($parametros);
 
