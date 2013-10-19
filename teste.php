@@ -1,17 +1,20 @@
 <?php
 
 	include('DAO/Conexao.php');
-	include('DAO/GrupoDAO.php');
-	include('Model/Grupo.php');
+	include('DAO/SubGrupoDAO.php');
+	include('Model/SubGrupo.php');
 
-	$grupoDAO = new GrupoDAO;
+	$subgrupoDAO = new SubGrupoDAO;
 	
-	$grupo = new Grupo;
+	$subgrupo = new SubGrupo;
 
-	$grupo->setIdGrupo(5);
-	$grupo->setNome('dddddb');
+	//$subgrupo->setIdSubGrupo(1);
+	$subgrupo->setIdGrupo(6);
+	$subgrupo->setDescricao('a');
 
-	print_r($grupoDAO->listar());
+	//print_r($subgrupo);
+
+	print_r($subgrupoDAO->recuperar(4));
 
 
 ?>
