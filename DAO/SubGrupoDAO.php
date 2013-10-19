@@ -18,7 +18,10 @@
 				$query->execute($parametros);           
 			} else {
 				$query = $this->conexao->prepare("INSERT INTO subgrupo (idGrupo, descricao) VALUES (:idGrupo, :descricao)");
-				$parametros = array(":idGrupo" => $subgrupo->getIdGrupo(), ":descricao" => $subgrupo->getDescricao());
+				$parametros = array(
+					":idGrupo" => $subgrupo->getIdGrupo(), 
+					":descricao" => $subgrupo->getDescricao()
+				);
 				$query->execute($parametros);
 			}
 

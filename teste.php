@@ -14,7 +14,7 @@
 
 	//print_r($subgrupo);
 
-	print_r($subgrupoDAO->recuperar(4));
+	print_r($subgrupoDAO->recuperar(3));
 
 
 ?>
