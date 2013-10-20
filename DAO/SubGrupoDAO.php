@@ -61,12 +61,12 @@
 
 			if ($resultado = $query->fetch(PDO::FETCH_OBJ)) {
 
-				$idsubgrupo = new SubGrupo;
-				$idsubgrupo->setIdSubGrupo($resultado->idSubGrupo);
-				$idsubgrupo->setIdGrupo($resultado->idGrupo);
-				$idsubgrupo->setDescricao($resultado->descricao);
+				$subgrupo = new SubGrupo;
+				$subgrupo->setIdSubGrupo($resultado->idSubGrupo);
+				$subgrupo->setIdGrupo($resultado->idGrupo);
+				$subgrupo->setDescricao($resultado->descricao);
 
-				return $idsubgrupo;
+				return $subgrupo;
 			}
 
 		}
