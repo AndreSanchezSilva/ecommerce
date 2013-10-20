@@ -10,7 +10,6 @@
 
 			if ($cliente->getIdCliente()) {             
 				$query = $this->conexao->prepare("UPDATE cliente SET nome = :nome, email = :email, senha = :senha, cpf = :cpf, cep = :cep, logradouro = :logradouro, numero = :numero, complemento = :complemento, bairro = :bairro, estado = :estado, cidade = :cidade, telefone = :telefone, celular = :celular  WHERE idCliente = :idCliente");
-				print_r($query);
 				$parametros = array(
 					":idCliente" => $cliente->getIdCliente(),
 					":nome" => $cliente->getNome(), 
@@ -30,7 +29,6 @@
 				$query->execute($parametros);           
 			} else {
 				$query = $this->conexao->prepare("INSERT INTO cliente (nome, email, senha, cpf, cep, logradouro, numero, complemento, bairro, estado, cidade, telefone, celular) VALUES (:nome, :email, :senha, :cpf, :cep, :logradouro, :numero, :complemento, :bairro, :estado, :cidade, :telefone, :celular)");
-				print_r($query);
 				$parametros = array(
 					":nome" => $cliente->getNome(), 
 					":email" => $cliente->getEmail(), 

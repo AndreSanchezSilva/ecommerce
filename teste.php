@@ -25,9 +25,8 @@
 
 	//print_r($cliente);
 
-	print_r($clienteDAO->recuperar(1));
-	print_r($clienteDAO->recuperar(2));
-	print_r($clienteDAO->recuperar(3));
+	print_r($clienteDAO->listar());
+	
 
 
 ?>
