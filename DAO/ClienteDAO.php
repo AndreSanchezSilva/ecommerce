@@ -64,7 +64,7 @@
 
 			while ( $resultado = $query->fetch ( PDO::FETCH_OBJ ) ) {               
 				$cliente = new Cliente;
-				$cliente->setIdCliente($resultado->idCliente);
+				$cliente->setIdCliente($resultado->idcliente);
 				$cliente->setNome($resultado->nome);
 				$cliente->setEmail($resultado->email);
 				$cliente->setSenha($resultado->senha);
@@ -89,14 +89,15 @@
 
 		public function recuperar( $idCliente ) {
 
-			$query = $this->conexao->prepare("SELECT * FROM cliente WHERE idCliente = :idCliente");
+			$query = $this->conexao->prepare("SELECT * FROM cliente WHERE idcliente = :idCliente");
+
 			$parametros = array(":idCliente" => $idCliente);
 			$query->execute($parametros);
 
 			if ($resultado = $query->fetch(PDO::FETCH_OBJ)) {
 
 				$cliente = new Cliente;
-				$cliente->setIdCliente($resultado->idCliente);
+				$cliente->setIdCliente($resultado->idcliente);
 				$cliente->setNome($resultado->nome);
 				$cliente->setEmail($resultado->email);
 				$cliente->setSenha($resultado->senha);

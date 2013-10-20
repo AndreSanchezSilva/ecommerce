@@ -42,8 +42,8 @@
 
 			while ( $resultado = $query->fetch ( PDO::FETCH_OBJ ) ) {               
 				$subgrupo = new SubGrupo;
-				$subgrupo->setIdSubGrupo($resultado->idSubGrupo);
-				$subgrupo->setIdGrupo($resultado->idGrupo);
+				$subgrupo->setIdSubGrupo($resultado->idsubgrupo);
+				$subgrupo->setIdGrupo($resultado->idgrupo);
 				$subgrupo->setDescricao($resultado->descricao);
 
 				$subgrupos[] = $subgrupo;
@@ -62,8 +62,8 @@
 			if ($resultado = $query->fetch(PDO::FETCH_OBJ)) {
 
 				$subgrupo = new SubGrupo;
-				$subgrupo->setIdSubGrupo($resultado->idSubGrupo);
-				$subgrupo->setIdGrupo($resultado->idGrupo);
+				$subgrupo->setIdSubGrupo($resultado->idsubgrupo);
+				$subgrupo->setIdGrupo($resultado->idgrupo);
 				$subgrupo->setDescricao($resultado->descricao);
 
 				return $subgrupo;

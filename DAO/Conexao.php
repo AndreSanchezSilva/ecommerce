@@ -15,7 +15,7 @@ class Conexao extends PDO {
             $pass = "";
 
             parent::__construct("mysql:host=$host; port=$porta; dbname=$db;","$user","$pass");
-            
+                        
 
         } else {
 
@@ -25,9 +25,9 @@ class Conexao extends PDO {
             $user = "kxyxzoxjfjjbzl";
             $pass = "_I7fyDJgFOoKSRoaBbSsJpMFur";
 
-
             parent::__construct("pgsql:host=$host; port=$porta; dbname=$db; user=$user; password=$pass;");
         }
+        
     }
 
     public function conecta() {
@@ -39,6 +39,7 @@ class Conexao extends PDO {
                 exit ();
             }
         }
+        $this->conexao->setAttribute( PDO::ATTR_CASE, PDO::CASE_LOWER );
         return $this->conexao;
     }
 
