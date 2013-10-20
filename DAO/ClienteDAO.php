@@ -95,7 +95,10 @@
 			$parametros = array(":idCliente" => $idCliente);
 			$query->execute($parametros);
 
+			print_r($query->fetch(PDO::FETCH_OBJ));
+
 			if ($resultado = $query->fetch(PDO::FETCH_OBJ)) {
+				print_r($resultado);
 				$cliente = new Cliente;
 				$cliente->setIdCliente($resultado->idCliente);
 				$cliente->setNome($resultado->nome);
