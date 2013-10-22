@@ -1,0 +1,17 @@
+Livro: PHP Programando com Orientação a Objetos
+ISBN: 9788575222003
+Página: 235
+
+
+Dicas:
+
+[15:14:50] Guilherme Siquinelli: então
+[15:14:59] Guilherme Siquinelli: vo desenvolve um mini ORM pro nosso ecommerce
+[15:15:04] Guilherme Siquinelli: com os design patterns
+[15:15:28] Guilherme Siquinelli: pega a estrutura de banco que o processor passo
+[15:15:40] Guilherme Siquinelli: e programa o mapeamento objeto relacional em cima dele
+[15:15:59] Guilherme Siquinelli: é chamado de Gateways
+
+[15:24:01] Guilherme Siquinelli: lembra que estavamos pensando nos relacionamentos
+[15:24:10] Guilherme Siquinelli: como tratariamos as FKs e etc
+[15:24:12] Guilherme Siquinelli: o ORM vai fazer isso
