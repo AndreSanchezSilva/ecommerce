@@ -1,23 +1,23 @@
 <?php
 
 	include('DAO/Conexao.php');
-	include('DAO/ProdutoDAO.php');
-	include('Model/Produto.php');
+	include('DAO/UsuarioDAO.php');
+	include('Model/Usuario.php');
 
-	$produtoDAO = new ProdutoDAO;
+	$usuarioDAO = new UsuarioDAO;
 	
-	$produto = new Produto;
+	$usuario = new Usuario;
 
-	$produto->setIdProduto(1);
-	$produto->setIdSubGrupo(3);
-	$produto->setNome('Produto Alterado 1');
-	$produto->setPreco(100);
-	$produto->setDetalhes('Datalhes Alterado 1');
+	$usuario->setIdUsuario(1);
+	$usuario->setNome('Nome Alterado Usuario 1');
+	$usuario->setEmail('Email Alterado 1');
+	$usuario->setUsuario('Usuario Alterado 1');
+	$usuario->setSenha('Senha Alterado Usuario 1');
 
-	$produtoDAO->excluir(1);
+	//$usuarioDAO->excluir(2);
 	//print_r($cliente);
 
-	print_r($produtoDAO->listar());
+	print_r($usuarioDAO->listar());
 	
 
 
