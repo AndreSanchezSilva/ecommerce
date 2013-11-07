@@ -1,6 +1,6 @@
 Heroku:
   http://xcommerce.herokuapp.com/
-  git@heroku.com:xcommecer.git
+  git@heroku.com:xcommerce.git
 
 Heroku Postgres:
 
