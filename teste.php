@@ -1,31 +1,23 @@
 <?php
 
 	include('DAO/Conexao.php');
-	include('DAO/ClienteDAO.php');
-	include('Model/Cliente.php');
+	include('DAO/ProdutoDAO.php');
+	include('Model/Produto.php');
 
-	$clienteDAO = new ClienteDAO;
+	$produtoDAO = new ProdutoDAO;
 	
-	$cliente = new Cliente;
+	$produto = new Produto;
 
-	$cliente->setIdCliente(1);
-	$cliente->setNome("a1");
-	$cliente->setEmail("b1");
-	$cliente->setSenha("c1");
-	$cliente->setCpf("d1");
-	$cliente->setCep("e1");
-	$cliente->setLogradouro("f1");
-	$cliente->setNumero("g1");
-	$cliente->setComplemento("h1");
-	$cliente->setBairro("i1");
-	$cliente->setEstado("j1");
-	$cliente->setCidade("l1");
-	$cliente->setTelefone("m1");
-	$cliente->setCelular("n1");
+	$produto->setIdProduto(1);
+	$produto->setIdSubGrupo(3);
+	$produto->setNome('Produto Alterado 1');
+	$produto->setPreco(100);
+	$produto->setDetalhes('Datalhes Alterado 1');
 
+	$produtoDAO->excluir(1);
 	//print_r($cliente);
 
-	print_r($clienteDAO->recuperar(1));
+	print_r($produtoDAO->listar());
 	
 
 
