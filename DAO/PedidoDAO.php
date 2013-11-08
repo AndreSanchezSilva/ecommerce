@@ -17,7 +17,7 @@
 				);
 				$query->execute($parametros);           
 			} else {
-				$query = $this->conexao->prepare("INSERT INTO produtoFoto (idCliente, dataPedido) VALUES (:idCliente, :dataPedido)");
+				$query = $this->conexao->prepare("INSERT INTO pedido (idCliente, dataPedido) VALUES (:idCliente, :dataPedido)");
 				$parametros = array(
 					":idCliente" => $pedido->getIdCliente(), 
 					":dataPedido" => $pedido->getDataPedido()
