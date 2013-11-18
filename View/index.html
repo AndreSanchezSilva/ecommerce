@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
       }
       #login{
         float: right;
-        width: 810px;
+        width: 840px;
         height: 75px;
       }
         .form-inline{
@@ -32,12 +32,22 @@
         }
       #menu{
         float: left;
-        width: 1110px;
+        width: 1130px;
         height: 75px;
+        margin-left: 10px;
       }
         .nav{
           margin-top: 20px;
         }
+      #menu .btn{
+        width: 225px;
+        background: #DCDCDC;
+      }
+      section{
+        width: 1140px;
+        height: 500px;
+        float: left;
+      }
     </style>
 
   </head>
@@ -47,12 +57,12 @@
     <div class="container">
       <nav>
         <div id="logo"class="masthead">
-          <h3 class="text-muted">Project name</h3>
+          <h3 class="text-muted">Carrinho de Compras</h3>
         </div> 
         <div id="login">
           <form class="form-inline" role="form">
             <div class="form-group">
-             <label class="sr-only" for="exampleInputEmail2">Email </label>
+              <label class="sr-only" for="exampleInputEmail2">Email </label>
               <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
             </div>
             <div class="form-group">
@@ -63,47 +73,41 @@
           </form>
         </div>
         <div id="menu">
-          <ul class="nav nav-justified">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Downloads</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-default">Home</button>
+            <button type="button" class="btn btn-default">...</button>
+            <button type="button" class="btn btn-default">...</button>
+            <button type="button" class="btn btn-default">...</button>
+            <button type="button" class="btn btn-default">...</button>
+          </div>
         </div>
       </nav>
       
 
       <section>
         <div class="jumbotron">
-          <h1>Banner! </h1>
+          <!-- <h1>Banner! </h1> -->
+          <img src="banner.jpg">
           <p class="lead">Texto</p>
           <p><a class="btn btn-lg btn-success btn-rigth" href="#" role="button">Saiba mais</a></p>
         </div>
       </section>
 
-
-      <
-
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-sm-8 col-md-4">
+          <div class="thumbnail">
+            <img src="note.jpg">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              <p><a href="#" class="btn btn-primary btn-right" role="button">Button</a></p>
+            </div>
+          </div>
         </div>
       </div>
+
+
 
       <!-- Site footer -->
       <div class="footer">
