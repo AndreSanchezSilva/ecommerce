@@ -48,6 +48,38 @@
         height: 500px;
         float: left;
       }
+      aside{
+        float: left;
+        height: 500px;
+        width: 210px;
+      }
+        .tamanho_aside{
+          width: 200px;
+          margin-left: 5px;
+          margin-top: 5px;
+        }
+        a{
+          text-decoration: none;
+        }
+      article{
+        float: left;
+        height: 500px;
+        width: 930px;
+        padding: 5px;
+      }
+        .tamanho_secao{
+          height: 350px;
+          width: 300px;
+          /*background: red;*/
+        }
+
+      .foto{
+        margin-top: 15px;
+      }
+      .preco{
+        text-align: right;
+        color: red;
+      }
     </style>
 
   </head>
@@ -55,7 +87,7 @@
   <body>
 
     <div class="container">
-      <nav>
+      
         <div id="logo"class="masthead">
           <h3 class="text-muted">Carrinho de Compras</h3>
         </div> 
@@ -72,6 +104,7 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
         </div>
+      <nav>
         <div id="menu">
           <div class="btn-group btn-group-lg">
             <button type="button" class="btn btn-default">Home</button>
@@ -83,36 +116,70 @@
         </div>
       </nav>
       
-
       <section>
-        <div class="jumbotron">
-          <!-- <h1>Banner! </h1> -->
-          <img src="banner.jpg">
-          <p class="lead">Texto</p>
-          <p><a class="btn btn-lg btn-success btn-rigth" href="#" role="button">Saiba mais</a></p>
+        <div class="thumbnail">
+          <img src="banner1.jpg">
         </div>
       </section>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-sm-8 col-md-4">
-          <div class="thumbnail">
-            <img src="note.jpg">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-              <p><a href="#" class="btn btn-primary btn-right" role="button">Button</a></p>
+      <aside>
+        <div class="row tamanho_aside">
+          <div class="span3">
+            <div class="well">
+              <div>
+                <ul class="nav nav-list">
+                  <li><label class="tree-toggle nav-header">Notebooks</label>
+                    <ul class="nav nav-list tree">
+                      <li><a href="">Dell</a></li>
+                      <li><a href="">Acer</a></li>
+                      <li><label class="tree-toggle nav-header">Desktop</label>
+                        <ul class="nav nav-list tree">
+                          <li><a href="">HP</a></li>
+                          <li><a href="">Positivo</a></li>
+                          <li><label class="tree-toggle nav-header">Monitores</label>
+                              <ul class="nav nav-list tree">
+                                  <li><a href="">AOC</a></li>
+                                  <li><a href="">Sansung</a></li>
+                              </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </aside>
+
+      <article>
+        <div class="row">
+          <div class="col-sm-8 col-md-4 ">
+            <div class="thumbnail tamanho_secao">
+              <img src="note.jpg" width="200" height="100" class="foto">
+              <div class="caption">
+                <h3>Notebook Acer</h3>
+                <p align="justify">
+                  HD 500GB 
+                  4GB
+                  Windows 8
+                </p>
+                <h4><div class="preco"> R$ 1.500,00 </div></h4>
+                <p><a href="#" class="btn btn-success btn-sm col-md-8" role="button">Comprar</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
 
 
 
-      <!-- Site footer -->
-      <div class="footer">
-        <p>&copy; Company 2013</p>
-      </div>
+      <footer>
+        <div class="footer">
+          <p>&copy; Company 2013</p>
+        </div>
+      </footer>
 
     </div> <!-- /container -->
   </body>
