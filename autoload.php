@@ -1,7 +1,7 @@
 <?php
 function __autoload($classe)
 {
-	$pastas = array('application','model','control');
+	$pastas = array('Application','Model','Controller');
 
 	foreach ($pastas as $pasta)
 	{

@@ -3,7 +3,7 @@ class Application
 {
 	static public function run()
 	{
-		$layout = file_get_contents('layout/default.php');
+		$layout = file_get_contents('Layout/default.php');
 		$content = '';
 
 		if ($_GET)
