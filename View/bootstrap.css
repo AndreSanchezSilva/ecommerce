@@ -1,4 +1,4 @@
-*{list-style-type:none};
+*{list-style-type:none}
 .topo_cor{
 	width: 100%;
 	height: 150px;
@@ -79,7 +79,7 @@
 	height: 200px;
 	text-decoration: none;
 }
-div.contato ul li a{
+.lista_links ul li a{
 	text-decoration: none;
 	color: black;
 }
