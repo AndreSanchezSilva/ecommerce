@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<?php
+<?php
+include 'autoload.php';
 
-
-
-	phpinfo();
-
-	//echo $_SERVER["SERVER_NAME"];
+Application::run();
 ?>
-</body>
-</html>
-
