@@ -1,13 +1,19 @@
 <?php
 class Grupo extends Page
 {
-	public function onView($get)
+	public function __construct() {}
+
+	public function onLista($get)
 	{
-		echo "lista de grupos";
+		include "View/grupo/lista.php";
 	}
-	public function onSave($get)
+	public function onCadastro($get)
 	{
-		echo "salva grupo";
+		include "View/grupo/cadastro.php";
+	}
+	public function onSalvar($get)
+	{
+		print_r($_POST);
 	}
 	public function onDelete($get)
 	{
