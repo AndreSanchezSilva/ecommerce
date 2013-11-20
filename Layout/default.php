@@ -4,6 +4,8 @@
 	<meta charset="utf-8" />
 	<title>E-commerce</title>
 
+	<base href="/ecommerce/" />
+
 	<link rel="stylesheet" type="text/css" href="Lib/css/bootstrap.min.css">
 
     <script type="text/javascript" src="Lib/js/jquery.min.js"></script>
@@ -21,16 +23,16 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="?class=Grupo&method=onLista">Grupo</a>
+						<a href="Grupo/onLista">Grupo</a>
 						<ul>
-							<li><a href="?class=Grupo&method=onCadastro">Cadastro</a></li>
+							<li><a href="Grupo/onCadastro">Cadastro</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="?class=Subgrupo&method=onView">Subgrupo</a>
+						<a href="Subgrupo/onView">Subgrupo</a>
 					</li>
 					<li>
-						<a href="?class=Produto&method=onView">Produto</a>
+						<a href="Produto/onView">Produto</a>
 					</li>
 				</ul>
 			</nav>

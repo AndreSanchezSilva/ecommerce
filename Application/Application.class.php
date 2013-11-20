@@ -8,7 +8,9 @@ class Application
 
 		if ($_GET)
 		{
-			$class = $_GET['class'];
+			$uri = explode('/', $_GET['uri']);
+
+			$class = $uri[0];
 			if (class_exists($class))
 			{
 				$pagina = new $class;
