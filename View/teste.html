@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="./Lib/css/bootstrap.min.css">
+	    <script type="text/javascript" src="./Lib/js/jquery.min.js"></script>
+	    <script type="text/javascript" src="./Lib/js/bootstrap.min.js"></script>
+	    <link href="bootstrap.css" rel="stylesheet">
+	    <link href="justified-nav.css" rel="stylesheet">
+
+	    <style type="text/css">
+	    	*{margin:0; padding:0; list-style-type:none; vertical-align:baseline;}
+		    .container{
+		    	background: red;
+		    }
+		    .topo{
+		    	height: 150px;
+		    	background: blue;
+		    }
+		    .logo{
+		    	height: 150px;
+		    	background: orange;
+		    	float: left;
+		    }
+		    .menu{
+		    	height: 75px;
+		    	float: left;
+		    	background: yellow;
+		    }
+		    .carrinho{
+		    	background: black;
+		    	float: right;
+		    }
+
+		    .busca{
+		    	height: 75px;
+		    	float: left;
+		    }
+		    #busca{
+		    	margin-top: 20px;
+		    }
+		    .banner{
+		    	height: 200px;
+		    	margin-top: 5px;
+		    	background: green;
+		    }
+		    .conteudo{
+		    	margin-top: 5px;
+		    	background: #999999;
+		    }
+		    .menu_lateral{
+		    	height: 500px;
+		    	float: left;
+		    	background: navy;
+		    }
+		    .breadcrumbs{
+		    	height: 40px;
+		    	float: left;
+		    }
+		    .filtro{
+		    	height: 50px;
+		    	background: green;
+		    	float: left;
+		    }
+		    .filtro_tamanho{
+		    	margin-top: 5px;
+		    	margin-left: 5px;
+		    	padding: 5px;
+		    }
+
+	        article{
+			    float: left;
+			    height: 500px;
+			    padding: 5px;
+		    }
+	        .tamanho_secao{
+	         	height: 350px;
+	        }
+		    .foto{
+		    	margin-top: 15px;
+		    }
+		    .preco{
+		       text-align: right;
+		       color: red;
+		    }
+	    </style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row topo">
+				<div class="logo col-md-3">
+					
+				</div>
+				<div class="menu col-md-9">
+					<nav>
+						<div id="row menu">
+					        <div class="btn-group btn-group-lg col-md-9">
+						        <button type="button" class="btn btn-default">Home</button>
+						        <button type="button" class="btn btn-default">Produtos</button>
+						        <button type="button" class="btn btn-default">Contato</button>
+						        <button type="button" class="btn btn-default">Produtos</button>
+						        <button type="button" class="btn btn-default">Contato</button>
+					        </div>
+						</div>
+						<div class="carrinho row col-md-3">
+							<button type="button" class="btn btn-success btn-lg col-md-12">
+								Carrinho <span class="glyphicon glyphicon-shopping-cart"></span>
+							</button>
+						</div>
+			      	</nav>
+				</div>
+				<div class="busca ">
+					<div class="row" id="busca">
+					 	<div class="col-lg-12">
+						    <div class="input-group col-lg-12">
+							    <input type="text" class="form-control">
+							    <span class="input-group-btn">
+							    	 <button class="btn btn-default" type="button">Buscar</button>
+							    </span>
+						    </div>
+	  					</div>
+					</div>
+				</div>
+			</div>
+			<div class="row banner">	
+				
+			</div>
+			<div class="row conteudo">
+				<div class="menu_lateral">
+					
+				</div>
+				<div class="breadcrumbs">
+					<ul class="breadcrumb">
+						<li><a href="#">Início</a> <span class="divider"></span></li>
+					</ul>
+				</div>
+				<div class="row filtro">
+					<span>Filtro: </span>
+					<div class="btn-group filtro_tamanho">
+						<button class="btn">Grupo</button>
+						<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li>Computadores</li>
+							<li>Notebooks</li>
+  						</ul>
+					</div>
+					<div class="btn-group filtro_tamanho">
+						<button class="btn">Sub-Grupo</button>
+						<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li>...</li>
+							<li>...</li>
+  						</ul>
+					</div>
+				</div>
+				<div class="lista_produtos">
+					
+				</div>
+			</div>
+			<div class="row rodape">
+				<div class="lista_links">
+					
+				</div>
+				<div class="formas_pagamento">
+					
+				</div>
+				<div class="contato">
+					
+				</div>
+				<div class="redes_sociais">
+					
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
