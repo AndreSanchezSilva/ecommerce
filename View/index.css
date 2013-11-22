@@ -5,7 +5,6 @@ header{
 	height: 150px;
 	font-family: ubuntu;
 	font-size: 180;
-	/*background: #00BFFF;*/
 }
 .topo{
 	height: 150px;
@@ -48,7 +47,10 @@ header{
 	height: 500px;
 	float: left;
 }
-
+.cor_titulo {
+	background-color: #009ACD !important;
+	color: white !important;
+}
 .lista_produtos{
 	float: left;
 	height: 500px;
