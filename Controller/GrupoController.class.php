@@ -16,8 +16,8 @@ class GrupoController extends Page
 		$grupo = new Grupo;
 		$grupo->setIdGrupo($request['post']['id']);
 		$grupo->setNome($request['post']['nome']);
-		//$grupoDao = new GrupoDAO;
-		//$grupoDao->salvar($grupoDao);
+		$grupoDao = new GrupoDAO;
+		$grupoDao->salvar($grupo);
 	}
 	public function onDelete($get)
 	{
