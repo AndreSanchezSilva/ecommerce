@@ -25,25 +25,25 @@
 	      <li class="dropdown">
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grupo <b class="caret"></b></a>
 	        <ul class="dropdown-menu">
-	          <li><a href="?class=Grupo&method=onView">View</a></li>
-	          <li><a href="?class=Grupo&method=onLista">Listar</a></li>
-	          <li><a href="?class=Grupo&method=onCadastro">Cadastrar</a></li>
+	          <li><a href="Grupo/onView">View</a></li>
+	          <li><a href="Grupo/onLista">Listar</a></li>
+	          <li><a href="Grupo/onCadastro">Cadastrar</a></li>
 	        </ul>
 	      </li>
 	      <li class="dropdown">
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub-Grupo <b class="caret"></b></a>
 	        <ul class="dropdown-menu">
-	          <li><a href="?class=SubGrupo&method=onView">View</a></li>
-	          <li><a href="?class=SubGrupo&method=onLista">Listar</a></li>
-	          <li><a href="?class=SubGrupo&method=onCadastro">Cadastrar</a></li>
+	          <li><a href="SubGrupo/onView">View</a></li>
+	          <li><a href="SubGrupo/onLista">Listar</a></li>
+	          <li><a href="SubGrupo/onCadastro">Cadastrar</a></li>
 	        </ul>
 	      </li>
 	      <li class="dropdown">
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produto <b class="caret"></b></a>
 	        <ul class="dropdown-menu">
-	          <li><a href="?class=Produto&method=onView">View</a></li>
-	          <li><a href="?class=Produto&method=onLista">Listar</a></li>
-	          <li><a href="?class=Produto&method=onCadastro">Cadastrar</a></li>
+	          <li><a href="Produto/onView">View</a></li>
+	          <li><a href="Produto/onLista">Listar</a></li>
+	          <li><a href="Produto/onCadastro">Cadastrar</a></li>
 	        </ul>
 	      </li>
 	    </ul>
