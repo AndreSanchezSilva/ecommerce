@@ -55,6 +55,14 @@ header{
 	float: left;
 	height: 500px;
 }
+.produto_desc{
+	padding: 40px;
+}
+.produto img{
+	margin: 0 auto;
+	display: block;
+	height: 150px;
+}
 .produto{
 	height: 450px;
 }
@@ -72,9 +80,9 @@ header{
 .lista_links, .formas_pagamento, .contato, .redes_sociais{
 	height: 200px;
 	text-decoration: none;
+	color: white;
 }
-
-.btn-default{
+.menu_botao, .botao_buscar{
 	background: #009ACD;
 	color: white;
 }
@@ -92,4 +100,7 @@ a{
 }
 h3{
 	font-family: ubuntu;
+}
+ul li a{
+	color: white;
 }

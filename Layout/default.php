@@ -4,6 +4,8 @@
 	<meta charset="utf-8" />
 	<title>E-commerce</title>
 
+	<base href="/ecommerce/" />
+
 	<link rel="stylesheet" type="text/css" href="Lib/css/bootstrap.min.css">
 
     <script type="text/javascript" src="Lib/js/jquery.min.js"></script>
@@ -11,6 +13,33 @@
 </head>
 <body>
 <header class="container">
+<<<<<<< HEAD
+	<div class="row">
+		<div class="span12">
+			<h1>Aplicação</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<nav>
+				<ul>
+					<li>
+						<a href="Grupo/onLista">Grupo</a>
+						<ul>
+							<li><a href="Grupo/onCadastro">Cadastro</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="Subgrupo/onView">Subgrupo</a>
+					</li>
+					<li>
+						<a href="Produto/onView">Produto</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+=======
 	<nav class="navbar navbar-default" role="navigation">
 	  <!-- Brand and toggle get grouped for better mobile display -->
 	  <div class="navbar-header">
@@ -48,6 +77,7 @@
 	  </div><!-- /.navbar-collapse -->
 	</nav>
 
+>>>>>>> f0fe6d2cc7524016a458615175aa6ab3a3157403
 </header>
 <main class="container">
 {{content}}
