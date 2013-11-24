@@ -2,17 +2,23 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Home</title>
+		<title>Carrinho</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" type="text/css" href="../Lib/css/bootstrap.min.css">
 	    <script type="text/javascript" src="../Lib/js/jquery.min.js"></script>
 	    <script type="text/javascript" src="../Lib/js/bootstrap.min.js"></script>
-	    <link href="index.css" rel="stylesheet">
-	    <link href="carrinho.css" rel="stylesheet">
-	    <style type="text/css">
+	    <link href="produto.css" rel="stylesheet">
+	   	<link href="index.css" rel="stylesheet">
 
-	    </style>
+	   	<style type="text/css">
+
+	   	h2, h4, p{
+	   		font-family: ubuntu;
+	   	}
+
+	   	</style>
+
 	</head>
 	<body>
 		<header>
@@ -75,9 +81,6 @@
 		</header>
 		<main>
 			<div class="container">
-				<div class="row banner">	
-					<a href=""><img src="banner.jpg"></a>
-				</div>
 				<div class="row conteudo">
 					<div class="menu_lateral col-md-3">
 						<div class="panel panel-default">
@@ -97,42 +100,43 @@
 							</ul>
 						</div>
 					</div>
-					<div class="lista_produtos col-md-9">
+					<div class="tabela col-md-9">
 						<div class="row">
-							<div class="produto thumbnail col-md-4">
-									<a href="#" class=""><img src="note.jpg" height="150"></a>
-									<div class="caption">
-										<h3>Notebook Samsung Ativ Book 2</h3>
-										<div class="descricao col-md-10">
-											Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
-										</div>
-										<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
-										<p><a href="#" class="btn btn-success col-md-10" role="button">Comprar</a></p>
-									</div>
-							</div>
-									<div class="produto thumbnail col-md-4">
-									<a href="#" class=""><img src="note.jpg" height="150"></a>
-									<div class="caption">
-										<h3>Notebook Samsung Ativ Book 2</h3>
-										<div class="descricao col-md-10">
-											Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
-										</div>
-										<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
-										<p><a href="#" class="btn btn-success col-md-10" role="button">Comprar</a></p>
-									</div>
-							</div>
-									<div class="produto thumbnail col-md-4">
-									<a href="#" class=""><img src="note.jpg" height="150"></a>
-									<div class="caption">
-										<h3>Notebook Samsung Ativ Book 2</h3>
-										<div class="descricao col-md-10">
-											Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
-										</div>
-										<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
-										<p><a href="#" class="btn btn-success col-md-10" role="button">Comprar</a></p>
-									</div>
-							</div>
-
+							<table class="table table-hover table-striped">
+							    <thead>
+								    <tr>          
+								    	<th class="col-sm-2"> Código </th>
+								      	<th class="col-sm-4"> Nome </th>
+								      	<th class="col-sm-2 text-center"> Qtde </th>
+								      	<th class="col-sm-1 text-right"> Preço </th>
+								      	<th class="col-sm-1 text-right"> Total </th>
+								      	<th class="col-sm-1"> &nbsp; </th>
+								      	<th class="col-sm-1"> &nbsp; </th>
+								    </tr>
+							    </thead>
+							    <tbody>
+								    <tr ng-repeat="item in itens">
+									    <td> 1000</td>
+									    <td> Notebook</td>
+									    <td class="text-center">
+									    	<div class="form-group">
+	            								<input type="number" class="form-control">
+	        								</div>
+									    </td>
+									    <td class="text-right">1500</td>
+									    <td class="text-right"> 1500</td>          
+									    <td>
+								        	<button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+								        </td>
+								        <td>
+								        	<button type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+								        </td>
+								    </tr>        
+								</tbody>      
+							</table>
+							<div class="pull-right col-md-2">
+    							<h3><label class="label label-success">R$</label></h3>
+    						</div>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,95 @@
+*{list-style-type:none}
+header{
+	margin-top: 15px;
+	width: 100%;
+	height: 150px;
+	font-family: ubuntu;
+	font-size: 180;
+}
+.topo{
+	height: 150px;
+}
+.logo{
+	height: 150px;
+	float: left;
+}
+.menu{
+	height: 75px;
+	float: left;
+}
+#botao_carrinho{
+	margin-top: 15px;
+}
+#botao_menu{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.carrinho{
+	height: 75px;
+	float: left;
+}
+.busca{
+	height: 75px;
+	float: left;
+}
+#campo_busca{
+	margin-top: 20px;
+}
+.banner{
+	height: 200px;
+	margin-top: 40px;
+}
+.conteudo{
+	margin-top: 40px;
+	font-family: ubuntu;
+}
+.menu_lateral{
+	height: 500px;
+	float: left;
+}
+.cor_titulo {
+	background-color: #009ACD !important;
+	color: white !important;
+}
+.lista_produtos{
+	float: left;
+	height: 500px;
+}
+.produto{
+	height: 450px;
+}
+.descricao{
+	height: 100px;
+}
+.preco{
+	color: red;
+}
+.rodape{
+	height: 200px;
+	background: #009ACD;
+	margin-top: 40px;
+}
+.lista_links, .formas_pagamento, .contato, .redes_sociais{
+	height: 200px;
+	text-decoration: none;
+}
+
+.btn-default{
+	background: #009ACD;
+	color: white;
+}
+footer{
+	width: 100%;
+	background: #009ACD;
+	font-family: ubuntu;
+	font-size: 200;
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+h3{
+	font-family: ubuntu;
+}
