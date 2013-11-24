@@ -48,7 +48,9 @@
 
 			$query = $this->conexao->prepare("DELETE FROM produto WHERE idProduto = :idProduto");
 			$parametros = array(":idProduto" => $idProduto);
-			$query->execute($parametros);           
+			$query->execute($parametros);     
+
+			return ($query) ? true : false;      
 
 		}
 
@@ -155,6 +157,8 @@
 
 				return $produto;
 			}
+
+			return false;
 
 		}
 

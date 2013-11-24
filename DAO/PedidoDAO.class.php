@@ -25,13 +25,16 @@
 				$query->execute($parametros);
 			}
 
+			return ($query) ? true : false;
 		}
 
 		public function excluir( $idPedido ) {
 
 			$query = $this->conexao->prepare("DELETE FROM pedido WHERE idPedido = :idPedido");
 			$parametros = array(":idPedido" => $idPedido);
-			$query->execute($parametros);           
+			$query->execute($parametros);  
+
+			return ($query) ? true : false;         
 
 		}
 
@@ -70,6 +73,8 @@
 
 				return $pedido;
 			}
+
+			return false;
 
 		}
 

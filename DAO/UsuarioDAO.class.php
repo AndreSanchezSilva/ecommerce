@@ -29,13 +29,17 @@
 				$query->execute($parametros);
 			}
 
+			return ($query) ? true : false;
+
 		}
 
 		public function excluir( $idUsuario ) {
 
 			$query = $this->conexao->prepare("DELETE FROM usuario WHERE idUsuario = :idUsuario");
 			$parametros = array(":idUsuario" => $idUsuario);
-			$query->execute($parametros);           
+			$query->execute($parametros);    
+
+			return ($query) ? true : false;       
 
 		}
 
@@ -77,6 +81,8 @@
 
 				return $usuario;
 			}
+
+			return false;
 
 		}
 

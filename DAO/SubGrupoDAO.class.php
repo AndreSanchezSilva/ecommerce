@@ -25,13 +25,17 @@
 				$query->execute($parametros);
 			}
 
+			return ($query) ? true : false;
+
 		}
 
 		public function excluir( $idSubGrupo ) {
 
 			$query = $this->conexao->prepare("DELETE FROM subgrupo WHERE idSubGrupo = :idSubGrupo");
 			$parametros = array(":idSubGrupo" => $idSubGrupo);
-			$query->execute($parametros);           
+			$query->execute($parametros);   
+
+			return ($query) ? true : false;        
 
 		}
 
@@ -68,6 +72,8 @@
 
 				return $subgrupo;
 			}
+
+			return false;
 
 		}
 

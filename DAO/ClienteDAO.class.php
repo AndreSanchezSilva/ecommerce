@@ -47,13 +47,17 @@
 				$query->execute($parametros);
 			}
 
+			return ($query) ? true : false;
+
 		}
 
 		public function excluir( $idCliente ) {
 
 			$query = $this->conexao->prepare("DELETE FROM cliente WHERE idCliente = :idCliente");
 			$parametros = array(":idCliente" => $idCliente);
-			$query->execute($parametros);           
+			$query->execute($parametros);   
+
+			return ($query) ? true : false;        
 
 		}
 
@@ -115,6 +119,7 @@
 				return $cliente;
 			}
 
+			return false;
 		}
 
 	}
