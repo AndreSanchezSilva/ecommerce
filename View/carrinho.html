@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Produto</title>
+		<title>Carrinho</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" type="text/css" href="../Lib/css/bootstrap.min.css">
@@ -12,22 +12,11 @@
 	   	<link href="index.css" rel="stylesheet">
 
 	   	<style type="text/css">
-	   	.foto{
-	   		background: yellow;
-	   		height: 500px;
-	   	}
-	   	.desc_produto{
-	   		background: green;
-	   		height: 500px;
-	   		
-	   	}
+
 	   	h2, h4, p{
 	   		font-family: ubuntu;
 	   	}
-	   	.desc{
-	   		height: 200px;
-	   		background: orange;
-	   	}
+
 	   	</style>
 
 	</head>
@@ -111,24 +100,43 @@
 							</ul>
 						</div>
 					</div>
-					<div class="produto col-md-9">
+					<div class="tabela col-md-9">
 						<div class="row">
-							<div class="foto col-md-6">
-								<div class="row">
-									
-								</div>
-							</div>
-
-							<div class="desc_produto col-md-6">
-								<div class="row">
-									<h2>Nome do Produto</h2>
-									<div class="desc col-md-12"><h4>
-									Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. 
-									</h4></div>
-									<p><a href="#" class="btn btn-success col-md-10" role="button">Comprar</a></p>
-								</div>
-							</div>
-
+							<table class="table table-hover table-striped">
+							    <thead>
+								    <tr>          
+								    	<th class="col-sm-2"> Código </th>
+								      	<th class="col-sm-4"> Nome </th>
+								      	<th class="col-sm-2 text-center"> Qtde </th>
+								      	<th class="col-sm-1 text-right"> Preço </th>
+								      	<th class="col-sm-1 text-right"> Total </th>
+								      	<th class="col-sm-1"> &nbsp; </th>
+								      	<th class="col-sm-1"> &nbsp; </th>
+								    </tr>
+							    </thead>
+							    <tbody>
+								    <tr ng-repeat="item in itens">
+									    <td> 1000</td>
+									    <td> Notebook</td>
+									    <td class="text-center">
+									    	<div class="form-group">
+	            								<input type="number" class="form-control">
+	        								</div>
+									    </td>
+									    <td class="text-right">1500</td>
+									    <td class="text-right"> 1500</td>          
+									    <td>
+								        	<button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+								        </td>
+								        <td>
+								        	<button type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+								        </td>
+								    </tr>        
+								</tbody>      
+							</table>
+							<div class="pull-right col-md-2">
+    							<h3><label class="label label-success">R$</label></h3>
+    						</div>
 						</div>
 					</div>
 				</div>
