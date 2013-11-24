@@ -17,6 +17,7 @@
 				$parametros = array(":nome" => $grupo->getNome());
 				$query->execute($parametros);
 			}
+			return ($query) ? true : false;
 
 		}
 
@@ -24,7 +25,8 @@
 
 			$query = $this->conexao->prepare("DELETE FROM grupo WHERE idGrupo = :idGrupo");
 			$parametros = array(":idGrupo" => $idGrupo);
-			$query->execute($parametros);           
+			$query->execute($parametros);    
+			return ($query) ? true : false;      
 
 		}
 
@@ -59,6 +61,8 @@
 
 				return $grupo;
 			}
+
+			return false;
 
 		}
 

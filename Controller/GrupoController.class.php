@@ -21,6 +21,7 @@ class GrupoController extends Page
 		
 		$grupoDao = new GrupoDAO;
 		$grupoDao->salvar($grupo);
+		
 	}
 	public function onDelete($get)
 	{

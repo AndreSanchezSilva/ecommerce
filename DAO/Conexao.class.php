@@ -12,7 +12,7 @@ class Conexao extends PDO {
             $porta = "3306";
             $db = "xcommerce";
             $user = "root";
-            $pass = "root";
+            $pass = "";
 
             parent::__construct("mysql:host=$host; port=$porta; dbname=$db;","$user","$pass");
                         
