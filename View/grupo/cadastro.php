@@ -7,7 +7,7 @@
         <form role="form" action="Grupo/onSalvar" method="POST">
         <div class="form-group col-sm-2">
             <label>Código</label>
-            <input type="text" class="form-control" name="id" disabled="disabled">
+            <input type="text" class="form-control" name="id "disabled="disabled">
        	</div>
         <div class="form-group col-sm-10">
             <label>Nome</label>

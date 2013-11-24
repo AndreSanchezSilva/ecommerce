@@ -14,8 +14,11 @@ class GrupoController extends Page
 	public function onSalvar($request)
 	{
 		$grupo = new Grupo;
-		$grupo->setIdGrupo($request['post']['id']);
+
+		$idGrupo = isset($request['post']['id']) ? $request['post']['id'] : NULL;
+		$grupo->setIdGrupo($idGrupo);
 		$grupo->setNome($request['post']['nome']);
+		
 		$grupoDao = new GrupoDAO;
 		$grupoDao->salvar($grupo);
 	}
