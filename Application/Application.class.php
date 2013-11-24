@@ -10,7 +10,7 @@ class Application
 		{
 			$uri = explode('/', $_GET['uri']);
 
-			$class = $uri[0];
+			$class = $uri[0] . 'Controller';
 			if (class_exists($class))
 			{
 				$pagina = new $class;
@@ -23,6 +23,10 @@ class Application
 			{
 				call_user_func($method, $_GET);
 			}
+		}
+		else
+		{
+			
 		}
 		echo str_replace('{{content}}', $content, $layout);
 	}

@@ -1,6 +1,6 @@
 <?php
 
-	Class Grupo {
+	class Grupo {
 
 		private $idGrupo;
 		private $nome;
