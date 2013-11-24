@@ -9,10 +9,6 @@
 	    <script type="text/javascript" src="../Lib/js/jquery.min.js"></script>
 	    <script type="text/javascript" src="../Lib/js/bootstrap.min.js"></script>
 	    <link href="index.css" rel="stylesheet">
-	    <link href="carrinho.css" rel="stylesheet">
-	    <style type="text/css">
-
-	    </style>
 	</head>
 	<body>
 		<header>
@@ -24,32 +20,43 @@
 					<div class="menu col-md-6">
 						<div id="botao_menu">
 					        <div class="btn-group btn-group-lg">
-						        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></button>
-							        <ul class="dropdown-menu">
-									    <li><a href="#">Dropdown link</a></li>
-									    <li><a href="#">Dropdown link</a></li>
+						       	<div class="btn-group">
+								   	<button type="button" class="btn btn-lg menu_botao dropdown-toggle" data-toggle="dropdown">Produto
+								      <span class="caret"></span>
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
 								    </ul>
-							  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></button>
-						        <ul class="dropdown-menu">
-								    <li><a href="#">Oi</a></li>
-								    <li><a href="#">Dropdown link</a></li>
-							    </ul>
-							    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></button>
-						        <ul class="dropdown-menu">
-								    <li><a href="#">Dropdown link</a></li>
-								    <li><a href="#">Dropdown link</a></li>
-							    </ul>
-							    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></button>
-						        <ul class="dropdown-menu">
-								    <li><a href="#">Dropdown link</a></li>
-								    <li><a href="#">Dropdown link</a></li>
-							    </ul>
-							    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></button>
-						        <ul class="dropdown-menu">
-								    <li><a href="#">Dropdown link</a></li>
-								    <li><a href="#">Dropdown link</a></li>
-							    </ul>
-						        
+							  	</div>
+							  	<div class="btn-group">
+								   	<button type="button" class="btn btn-lg menu_botao dropdown-toggle" data-toggle="dropdown">Produto
+								      <span class="caret"></span>
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								    </ul>
+							  	</div> 
+							  	<div class="btn-group">
+								   	<button type="button" class="btn btn-lg menu_botao dropdown-toggle" data-toggle="dropdown">Produto
+								      <span class="caret"></span>
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								    </ul>
+							  	</div> 
+							  	<div class="btn-group">
+								   	<button type="button" class="btn btn-lg menu_botao dropdown-toggle" data-toggle="dropdown">Produto
+								      <span class="caret"></span>
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								    </ul>
+							  	</div> 
+							  	
 					        </div>
 						</div>
 					</div>
@@ -64,7 +71,7 @@
 							    <div class="input-group">
 								    <input type="text" class="form-control">
 								    <span class="input-group-btn">
-								    	 <button class="btn btn-default" type="button">Buscar</button>
+								    	 <button class="btn btn-default botao_buscar" type="button">Buscar</button>
 								    </span>
 							    </div>
 		  					</div>
@@ -100,38 +107,39 @@
 					<div class="lista_produtos col-md-9">
 						<div class="row">
 							<div class="produto thumbnail col-md-4">
-									<a href="#" class=""><img src="note.jpg" height="150"></a>
-									<div class="caption">
-										<h3>Notebook Samsung Ativ Book 2</h3>
-										<div class="descricao col-md-10">
-											Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
-										</div>
-										<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
-										<p><a href="#" class="btn btn-success col-md-10" role="button">Comprar</a></p>
+								<a href="#"><img src="note.jpg"></a>
+								<div class="caption produto_desc">
+									<h3>Notebook Samsung Ativ Book 2</h3>
+									<div class="descricao">
+										Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
 									</div>
+									<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
+									<button type="button" class="btn btn-success btn-block">Comprar</button>
+								</div>
 							</div>
-									<div class="produto thumbnail col-md-4">
-									<a href="#" class=""><img src="note.jpg" height="150"></a>
-									<div class="caption">
-										<h3>Notebook Samsung Ativ Book 2</h3>
-										<div class="descricao col-md-10">
-											Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
-										</div>
-										<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
-										<p><a href="#" class="btn btn-success col-md-10" role="button">Comprar</a></p>
+							<div class="produto thumbnail col-md-4">
+								<a href="#"><img src="note.jpg"></a>
+								<div class="caption produto_desc">
+									<h3>Notebook Samsung Ativ Book 2</h3>
+									<div class="descricao">
+										Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
 									</div>
+									<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
+									<button type="button" class="btn btn-success btn-block">Comprar</button>
+								</div>
 							</div>
-									<div class="produto thumbnail col-md-4">
-									<a href="#" class=""><img src="note.jpg" height="150"></a>
-									<div class="caption">
-										<h3>Notebook Samsung Ativ Book 2</h3>
-										<div class="descricao col-md-10">
-											Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
-										</div>
-										<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
-										<p><a href="#" class="btn btn-success col-md-10" role="button">Comprar</a></p>
+							<div class="produto thumbnail col-md-4">
+								<a href="#"><img src="note.jpg"></a>
+								<div class="caption produto_desc">
+									<h3>Notebook Samsung Ativ Book 2</h3>
+									<div class="descricao">
+										Intel® Dual Core™, 4GB, 500GB, Gravador de DVD, Leitor de Cartões, HDMI, LED 14” e Windows 8
 									</div>
+									<div class="preco pull-right"><h3>Por: 1.600,00</h3></div>
+									<button type="button" class="btn btn-success btn-block">Comprar</button>
+								</div>
 							</div>
+							
 
 						</div>
 					</div>

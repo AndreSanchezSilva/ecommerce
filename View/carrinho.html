@@ -82,40 +82,22 @@
 		<main>
 			<div class="container">
 				<div class="row conteudo">
-					<div class="menu_lateral col-md-3">
-						<div class="panel panel-default">
-							<div class="panel-heading cor_titulo">Notebook</div>
-							<ul class="list-group">
-								<a href=""><li class="list-group-item">Acer</li></a>
-								<a href=""><li class="list-group-item">Acer</li></a>
-								<a href=""><li class="list-group-item">Acer</li></a>
-							</ul>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading cor_titulo">Notebook</div>
-							<ul class="list-group">
-								<a href=""><li class="list-group-item">Acer</li></a>
-								<a href=""><li class="list-group-item">Acer</li></a>
-								<a href=""><li class="list-group-item">Acer</li></a>
-							</ul>
-						</div>
-					</div>
-					<div class="tabela col-md-9">
+
+					<div class="tabela">
 						<div class="row">
-							<table class="table table-hover table-striped">
+							<table class="table table-hover table-striped col-md-12">
 							    <thead>
 								    <tr>          
-								    	<th class="col-sm-2"> Código </th>
-								      	<th class="col-sm-4"> Nome </th>
-								      	<th class="col-sm-2 text-center"> Qtde </th>
-								      	<th class="col-sm-1 text-right"> Preço </th>
-								      	<th class="col-sm-1 text-right"> Total </th>
-								      	<th class="col-sm-1"> &nbsp; </th>
-								      	<th class="col-sm-1"> &nbsp; </th>
+								    	<th class="col-md-2"> Código </th>
+								      	<th class="col-md-4"> Nome </th>
+								      	<th class="col-md-1 text-center"> Quantidade </th>
+								      	<th class="col-md-2 text-right"> Preço </th>
+								      	<th class="col-md-2 text-right"> Total </th>
+								      	<th class="col-md-1"> &nbsp;</th>
 								    </tr>
 							    </thead>
 							    <tbody>
-								    <tr ng-repeat="item in itens">
+								    <tr>
 									    <td> 1000</td>
 									    <td> Notebook</td>
 									    <td class="text-center">
@@ -126,18 +108,30 @@
 									    <td class="text-right">1500</td>
 									    <td class="text-right"> 1500</td>          
 									    <td>
-								        	<button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
-								        </td>
-								        <td>
-								        	<button type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+								        	<button class="btn btn-danger btn-sm pull-right"><span class="glyphicon glyphicon-trash"></span></button>
 								        </td>
 								    </tr>        
 								</tbody>      
 							</table>
-							<div class="pull-right col-md-2">
-    							<h3><label class="label label-success">R$</label></h3>
+							<hr>
+						</div>
+						<div class="row">
+								<div class="pull-right">
+    							<table>
+    								<tr>
+    									<td class="text-center col-md-4"><h4>Subtotal:</h4></td>
+    									<td class="col-md-8 "><h4>R$</h4></td>
+    								</tr>
+    							</table>
     						</div>
 						</div>
+						<hr>
+						<div class="row">
+							<button type="button" class="btn btn-success btn-lg col-md-3 pull-right">
+								<span>Finalizar</span>
+							</button>
+						</div>
+						<hr>
 					</div>
 				</div>
 			</div>
