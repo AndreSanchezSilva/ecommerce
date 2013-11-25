@@ -69,7 +69,7 @@ header{
 .descricao{
 	height: 100px;
 }
-.preco{
+.cor_preco{
 	color: red;
 }
 .rodape{
@@ -93,7 +93,6 @@ footer{
 	font-size: 200;
 	color: white;
 }
-
 a{
 	text-decoration: none;
 	color: black;
@@ -104,3 +103,31 @@ h3{
 ul li a{
 	color: white;
 }
+
+
+/*css produto*/
+.foto {
+	   		width: 150px;
+	   		height: auto;
+	   	}
+	   	.foto-principal {
+	   		width: 400px;
+	   	}
+	   	.foto_min{
+	   		margin-top: 10px;
+	   	}
+	   	.desc_produto{
+	   		height: 300px;
+	   	}
+	   	.desc{
+	   		height: 100px;
+	   	}
+	   	h2, h4, p{
+	   		font-family: ubuntu;
+	   	}   	
+	   	.cor_preco{
+	   		color: red;
+	   	}
+	   	.comprar, .preco{
+	   		margin-top: 50px;
+	   	}

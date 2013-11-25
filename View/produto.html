@@ -10,21 +10,15 @@
 	    <script type="text/javascript" src="../Lib/js/bootstrap.min.js"></script>
 	   	<link href="index.css" rel="stylesheet">
 
-	   	<style type="text/css">
-	   	.foto{
-	   		height: 500px;
-	   	}
-	   	.desc_produto{
-	   		height: 500px;
-	   		
-	   	}
-	   	h2, h4, p{
-	   		font-family: ubuntu;
-	   	}
-	   	.desc{
-	   		height: 200px;
-	   	}
-	   	</style>
+	   	<!-- Adicionando plugins-->
+		<script type="text/javascript" src="../plugin/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<link rel="stylesheet" href="../plugin/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="../plugin/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<link rel="stylesheet" href="../plugin/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="../plugin/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="../plugin/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		<link rel="stylesheet" href="../plugin/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="../plugin/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 	</head>
 	<body>
@@ -107,11 +101,16 @@
 							</ul>
 						</div>
 					</div>
-					<div class="produto col-md-9">
+					<div class=" col-md-9">
 						<div class="row">
-							<div class="foto col-md-6">
+							<div class="col-md-6">
 								<div class="row">
-									
+									<a class="fancybox thumbnail" rel="group" href="logo.png"><img src="logo.png" class="foto-principal" alt=""/></a>
+								</div>
+								<div class="row foto_min">
+									<div class="col-md-6"><a class="fancybox thumbnail" rel="group" href="logo.png"><img class="foto" src="logo.png" alt=""/></a></div>
+
+									<div class="col-md-6"><a class="fancybox thumbnail" rel="group" href="logo.png"><img class="foto" src="logo.png" alt=""/></a></div>
 								</div>
 							</div>
 
@@ -121,7 +120,8 @@
 									<div class="desc col-md-12"><h4>
 									Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. 
 									</h4></div>
-									<p><a href="#" class="btn btn-success btn-block col-md-10" role="button">Comprar</a></p>
+									<div class="pull-right cor_preco preco"><h2>R$ 1.200,00</h2></div>
+									<p><a href="#" class="btn btn-success col-md-8 pull-right comprar" role="button">Comprar</a></p>
 								</div>
 							</div>
 
@@ -167,5 +167,10 @@
 				</div>
 			</div>
 		</footer>
+			<script type="text/javascript">
+				$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
 	</body>
 </html>
