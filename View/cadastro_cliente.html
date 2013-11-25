@@ -6,91 +6,146 @@
 		<link rel="stylesheet" type="text/css" href="../Lib/css/bootstrap.min.css">
 	    <script type="text/javascript" src="../Lib/js/jquery.min.js"></script>
 	    <script type="text/javascript" src="../Lib/js/bootstrap.min.js"></script>
+
+	    <style type="text/css">
+	    .login{
+	    	margin-top: 190px;
+	    }
+	    </style>
 	</head>
 	<body>
 		<div class="container">
-			<h3>Cadastro de Cliente</h3>
-			<hr>
 		    <form role="form">
-		   		<div class="row">
-		    		<div class="form-group col-sm-2">
-					    <label>Código</label>
-					    <input type="text" class="form-control" disabled="disabled">
-		    		</div> 
-		    		<div class="form-group col-sm-3">
-					    <label>CPF</label>
-					    <input type="text" class="form-control">
-		    		</div>       
-		    		<div class="form-group col-sm-7">
-					    <label>Nome</label>
-					    <input type="text" class="form-control">
-		    		</div>
-		    	</div>
-		    	<hr>
-		   		<div class="row">
-		    		<div class="form-group col-sm-10">
-					    <label>Logradouro</label>
-					    <input type="text" class="form-control">
-		    		</div>      
-		    		<div class="form-group col-sm-2">
-					    <label>Número</label>
-					    <input type="text" class="form-control">
-		    		</div>
-		    	</div>
-		   		<div class="row">
-		    		<div class="form-group col-sm-5">
-					    <label>Bairro</label>
-					    <input type="text" class="form-control">
-		    		</div>
-		    		<div class="form-group col-sm-5">
-					    <label>Cidade</label>
-					    <input type="text" class="form-control">
-		    		</div>
-		    		<div class="form-group col-sm-2">
-			    		<label>Estado</label>
-				    	<select class="form-control">
-							<option>1</option>
-							<option>2</option>
-						</select>
-					</div>
+			    <div class="row">
+			    <hr>
+			    	<div class="col-md-6 login">
+			    	<label><h3>Já sou Cadastrado</h3></label>
+				    	<div class="row">
+				    		<div class="form-group col-md-12">
+							    <label>Email</label>
+							    <input type="text" class="form-control">
+				    		</div> 
+				    	</div>
+				    	<div class="row">
+				    		<div class="form-group col-md-12">
+							    <label>Senha</label>
+							    <input type="text" class="form-control">
+				    		</div>
+			    		</div> 
+			    		<div class="row">
+				    		<div class="col-md-12 pull-right">
+			            		<button class="btn btn-success pull-right col-md-6">Login</button>
+			        		</div>  
+				    	</div>
+			    	</div>
+				    <div class="col-md-6">
+				    <label><h3>Não sou cadastrado</h3></label>
+				   		<div class="row">
+				    		<div class="form-group col-md-2">
+							    <label>Código</label>
+							    <input type="text" class="form-control" disabled="disabled">
+				    		</div> 
+				    		<div class="form-group col-md-3">
+							    <label>CPF</label>
+							    <input type="text" class="form-control">
+				    		</div>       
+				    		<div class="form-group col-md-7">
+							    <label>Nome</label>
+							    <input type="text" class="form-control">
+				    		</div>
+				    	</div>
+				    	<hr>
+				   		<div class="row">
+				    		<div class="form-group col-md-10">
+							    <label>Logradouro</label>
+							    <input type="text" class="form-control">
+				    		</div>      
+				    		<div class="form-group col-md-2">
+							    <label>Número</label>
+							    <input type="text" class="form-control">
+				    		</div>
+				    	</div>
+				   		<div class="row">
+				    		<div class="form-group col-md-4">
+							    <label>Bairro</label>
+							    <input type="text" class="form-control">
+				    		</div>
+				    		<div class="form-group col-md-5">
+							    <label>Cidade</label>
+							    <input type="text" class="form-control">
+				    		</div>
+				    		<div class="form-group col-md-3">
+					    		<label>Estado</label>
+						    	<select class="form-control">
+									<option>AC</option>
+									<option>AL</option>
+									<option>AP</option>
+									<option>AM</option>
+									<option>BA</option>
+									<option>CE</option>
+									<option>DF</option>
+									<option>ES</option>
+									<option>GO</option>
+									<option>MA</option>
+									<option>MT</option>
+									<option>MS</option>
+									<option>MG</option>
+									<option>PA</option>
+									<option>PB</option>
+									<option>PR</option>
+									<option>PE</option>
+									<option>PI</option>
+									<option>RJ</option>
+									<option>RN</option>
+									<option>RS</option>
+									<option>RO</option>
+									<option>RR</option>
+									<option>SC</option>
+									<option>SP</option>
+									<option>SE</option>
+									<option>TO</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+				    		<div class="form-group col-md-4">
+							    <label>CEP</label>
+							    <input type="text" class="form-control">
+				    		</div> 
+				    		<div class="form-group col-md-8">
+							    <label>Complemento</label>
+							    <input type="text" class="form-control">
+				    		</div>
+				    	</div>
+				    	<div class="row">
+				    		<div class="form-group col-md-4">
+							    <label>Telefone</label>
+							    <input type="text" class="form-control">
+				    		</div>  
+				    		<div class="form-group col-md-4">
+							    <label>Celular</label>
+							    <input type="text" class="form-control">
+				    		</div> 
+				    	</div>      
+				    	<hr>
+				    	<div class="row">
+				    		<div class="form-group col-md-8">
+							    <label>Email</label>
+							    <input type="text" class="form-control">
+				    		</div>      
+				    		<div class="form-group col-md-4">
+							    <label>Senha</label>
+							    <input type="text" class="form-control">
+				    		</div> 
+				    	</div>
+				    	<div class="row">
+				    		<div class="col-md-12 pull-right">
+				    			<button class="btn btn-warning col-md-5">Limpar</button> 
+			            		<button class="btn btn-success pull-right col-md-5">Adicionar</button>
+			        		</div>  
+				    	</div>
+				    </div>
 				</div>
-				<div class="row">
-		    		<div class="form-group col-sm-4">
-					    <label>CEP</label>
-					    <input type="text" class="form-control">
-		    		</div> 
-		    		<div class="form-group col-sm-8">
-					    <label>Complemento</label>
-					    <input type="text" class="form-control">
-		    		</div>
-		    	</div>
-		    	<div class="row">
-		    		<div class="form-group col-sm-4">
-					    <label>Telefone</label>
-					    <input type="text" class="form-control">
-		    		</div>  
-		    		<div class="form-group col-sm-4">
-					    <label>Celular</label>
-					    <input type="text" class="form-control">
-		    		</div> 
-		    	</div>      
-		    	<hr>
-		    	<div class="row">
-		    		<div class="form-group col-sm-8">
-					    <label>Email</label>
-					    <input type="text" class="form-control">
-		    		</div>      
-		    		<div class="form-group col-sm-4">
-					    <label>Senha</label>
-					    <input type="text" class="form-control">
-		    		</div> 
-		    	</div>
-		    	<div class="row">
-		    		<div class="col-sm-2 pull-right">
-		    			<button class="btn btn-warning ">Limpar</button> 
-	            		<button class="btn btn-success pull-right">Adicionar</button>
-	        		</div>  
-		    	</div>
 		    </form>
     		<hr>
     	</div>
