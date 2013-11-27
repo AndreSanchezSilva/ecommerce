@@ -23,7 +23,7 @@ class Page
 	 * executa determinado método com os parâmetros recebidos
 	 */
 	public function run()
-	{	
+	{
 		$uri = explode('/', $_GET['uri']);
 
 		$class = isset($uri[0]) ? $uri[0] . 'Controller' : NULL;
@@ -45,7 +45,7 @@ class Page
 			}
 			else if (function_exists($method))
 			{
-				call_user_func($method, $_GET);
+				call_user_func($method, $request);
 			}
 		}
 	}

@@ -33,6 +33,8 @@
 		public function listar() {
 
 			$query = $this->conexao->query("SELECT * FROM grupo ORDER BY nome");
+
+			//return $query->fetchAll ( PDO::FETCH_OBJ );
 			$grupos = Array();
 
 			while ( $resultado = $query->fetch ( PDO::FETCH_OBJ ) ) {               
@@ -44,7 +46,6 @@
 			}
 			
 			return $grupos;
-
 		}
 
 		public function recuperar( $idGrupo ) {
