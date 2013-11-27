@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
+		<meta charset="utf-8">
 		<title>Cadastro de Cliente</title>
-		<meta charset="utf-8"/>
-		<link rel="stylesheet" type="text/css" href="../Lib/css/bootstrap.min.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="../Lib/css/bootstrap.min.css">
 	    <script type="text/javascript" src="../Lib/js/jquery.min.js"></script>
 	    <script type="text/javascript" src="../Lib/js/bootstrap.min.js"></script>
-
+	    <link href="index.css" rel="stylesheet">
+	    
 	    <style type="text/css">
 	    .login{
 	    	margin-top: 190px;
@@ -14,6 +17,76 @@
 	    </style>
 	</head>
 	<body>
+		<header>
+			<div class="container">
+				<div class="topo row">
+					<div class="logo col-md-3">
+						<a href="#"><img src="logo.png" width="250" height="150"></a>
+					</div>
+					<div class="menu col-md-6">
+						<div id="botao_menu">
+					        <div class="btn-group btn-group-lg">
+						       	<div class="btn-group">
+								   	<button type="button" class="btn btn-lg menu_botao dropdown-toggle" data-toggle="dropdown">Produto
+								      <span class="caret"></span>
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								    </ul>
+							  	</div>
+							  	<div class="btn-group">
+								   	<button type="button" class="btn btn-lg menu_botao dropdown-toggle" data-toggle="dropdown">Produto
+								      <span class="caret"></span>
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								    </ul>
+							  	</div> 
+							  	<div class="btn-group">
+								   	<button type="button" class="btn btn-lg menu_botao dropdown-toggle" data-toggle="dropdown">Produto
+								      <span class="caret"></span>
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								    </ul>
+							  	</div> 
+							  	<div class="btn-group">
+								   	<button type="button" class="btn btn-lg menu_botao dropdown-toggle" data-toggle="dropdown">Produto
+								      <span class="caret"></span>
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								    </ul>
+							  	</div> 
+							  	
+					        </div>
+						</div>
+					</div>
+					<div class="carrinho col-md-3">
+						<button type="button" class="btn btn-success btn-lg col-md-12" id="botao_carrinho">
+							Carrinho <span class="glyphicon glyphicon-shopping-cart"></span>
+						</button>
+					</div>
+					<div class="busca col-md-9">
+						<div id="campo_busca">
+						 	<div class="">
+							    <div class="input-group">
+								    <input type="text" class="form-control">
+								    <span class="input-group-btn">
+								    	 <button class="btn btn-default botao_buscar" type="button">Buscar</button>
+								    </span>
+							    </div>
+		  					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+			<main>
 		<div class="container">
 		    <form role="form">
 			    <div class="row">
@@ -149,5 +222,44 @@
 		    </form>
     		<hr>
     	</div>
+	</body>
+	</main>
+		<footer>
+			<div class="container">
+				<div class="row rodape">
+
+					<div class="lista_links col-md-3">
+						<label>Links</label>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Home</a></li>
+						</ul>
+					</div>
+					<div class="formas_pagamento col-md-3">
+						<ul>
+							<li><label>Formas de Pagamento</label></li>
+							<li><a href="#"><img src="boleto.png" width="60" height="50"></a></li>
+						</ul>
+					</div>
+					<div class="contato col-md-3">
+						<ul>
+							<li><label>Contato</label></li>
+							<li>Tel: 
+							0800 321 4567</li>
+							<li>Email: atendimento@zecommerce.com</li>
+						</ul>
+					</div>
+
+					<div class="redes_sociais col-md-3">
+						<ul>
+							<li><label>Redes Sociais</label></li>
+							<li><a href="#"><img src="redes.png" width="100" height="50"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
